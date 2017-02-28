@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane stylesheets="/Producto_Ingreso.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.artesaniafenedif.modelo.ControllerProductoIngreso">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label fx:id="lblPantalla" alignment="CENTER" prefHeight="17.0" prefWidth="235.0" text="Ingreso Producto" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <Label fx:id="lblNombreProducto" text="Nombre Producto" GridPane.rowIndex="2" />
+      <TextField  fx:id="txtNombreProducto" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label  fx:id="lblDescripcion" text="Descripcion" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+      <TextArea  fx:id="txtDescripcion" prefHeight="93.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label text="Precio" GridPane.rowIndex="6" />
+      <Label text="Cantidad" GridPane.rowIndex="7" />
+      <CheckBox  fx:id="chkOferta" mnemonicParsing="false" text="Oferta" GridPane.rowIndex="8" />
+      <ImageView  fx:id="imgProductoImagen" fitHeight="150.0" fitWidth="200.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <Label text="Imagen de Producto" GridPane.rowIndex="9" />
+      <TextField  fx:id="txtPrecio" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <TextField  fx:id="txtCantidad" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Button  fx:id="btnCancelar" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Cancelar" GridPane.rowIndex="10" />
+      <Button  fx:id="btnGuardar" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="Guardar" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <Button  fx:id="btnIngresarMic" mnemonicParsing="false" onAction="#ingresarPorMicrofono" prefHeight="32.0" prefWidth="157.0" text="Ingresar Por Microfono" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Button  fx:id="btnPararYTraducir" mnemonicParsing="false" onAction="#pararTraducir" prefHeight="32.0" prefWidth="157.0" text="Parar y traducir" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+   </children>
+</GridPane>
